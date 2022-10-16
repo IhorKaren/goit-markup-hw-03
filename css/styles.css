@@ -1,10 +1,10 @@
 :root {
   --primary-text-color: #757575;
-  --secondary-text-color: #FFFFFF;
+  --secondary-text-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bg-color: #F5F5F5;
-  --secondary-bg-color: #F5F4FA;
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f4fa;
 }
 
 body {
@@ -46,13 +46,13 @@ body {
 
 .page-header {
   background-color: var(--secondary-text-color);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
-  /* Logo */
+/* Logo */
 .logo {
   color: var(--title-text-color);
-  
+
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -91,7 +91,7 @@ body {
   padding-bottom: 32px;
 
   color: var(--title-text-color);
-  
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -120,7 +120,7 @@ body {
 
 .contact-nav .link {
   color: var(--primary-text-color);
-  
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -143,7 +143,6 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
 
-  
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -181,18 +180,18 @@ body {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
 
-  cursor: pointer
+  cursor: pointer;
 }
-
-/* Features & Gallery*/
 
 /* Прихований заголовок */
 .hiden-title {
   margin-top: 0;
   margin-bottom: 0;
-  
-  background-color: pink
+
+  background-color: pink;
 }
+
+/* Sections*/
 
 .section {
   padding-top: 94px;
@@ -201,6 +200,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-title {
@@ -215,7 +219,7 @@ body {
   text-align: center;
 }
 
-.section-list .title {
+.section-content .title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -227,9 +231,37 @@ body {
   text-transform: uppercase;
 }
 
-.section-list p {
+.section-content p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Features */
+
+.features-list {
+  display: flex;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .item + .item {
+  margin-left: 30px;
+}
+
+.gallery-list {
+  display: flex;
+}
+
+/* Gallery */
+
+.gallery-list .item {
+  width: 370px;
+}
+
+.gallery-list .item + .item {
+  margin-left: 30px;
 }
 
 /* Team */
@@ -238,35 +270,44 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 .team-list .title {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item {
+  width: 270px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
 /* Footer */
 
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.footer-nav {
-  display: flex;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   color: #ffffff;
   text-decoration: none;
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -277,16 +318,19 @@ body {
   color: var(--accent-color);
 }
 
+.footer-nav {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
-
-
   color: #ffffff;
-
   font-style: normal;
 }
 
-.footer-auth {
-
+.footer-nav .item {
+  margin-bottom: 9px;
 }
 
 .footer-contact .link {
@@ -306,7 +350,6 @@ body {
   list-style: none;
 
   background-color: var(--primary-bg-color);
-  
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -343,17 +386,16 @@ body {
   border: none;
 
   color: var(--title-text-color);
-
   font-family: inherit;
   text-align: center;
 }
 
 .btn.secondary:hover,
 .btn.secondary:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  cursor: pointer
+  cursor: pointer;
 }
