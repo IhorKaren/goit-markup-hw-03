@@ -152,6 +152,13 @@ img {
   /* outline: 1px solid red; */
 }
 
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Hero */
+
 .hero {
   text-align: center;
 }
@@ -209,11 +216,6 @@ img {
 }
 
 /* Sections*/
-
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 .section-title {
   margin-top: 0;
@@ -308,6 +310,12 @@ img {
   line-height: 1.71;
 }
 
+.footer-nav {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -322,12 +330,6 @@ img {
 
 .footer-logo span {
   color: var(--accent-color);
-}
-
-.footer-nav {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address {
@@ -439,7 +441,7 @@ img {
 }
 
 .card-info {
-  padding: 20px 20px;
+  padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
