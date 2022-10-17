@@ -141,6 +141,11 @@ img {
 
 /* Hero */
 
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -151,13 +156,6 @@ img {
 
   /* outline: 1px solid red; */
 }
-
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* Hero */
 
 .hero {
   text-align: center;
