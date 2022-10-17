@@ -8,6 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -36,87 +43,109 @@
     </header>
     <!--Hero-->
     <main>
-      <section class="buttons">
+      <section class="section no-padding">
         <!-- Прихований заголовок -->
         <h1 class="hiden-title">Портфоліо</h1>
-        <ul class="buttons-list">
-          <li><button class="btn secondary" type="button">Усі</button></li>
-          <li><button class="btn secondary" type="button">Веб-сайти</button></li>
-          <li><button class="btn secondary" type="button">Додатки</button></li>
-          <li><button class="btn secondary" type="button">Дизайн</button></li>
-          <li><button class="btn secondary" type="button">Маркетинг</button></li>
-        </ul>
+        <div class="container button-nav">
+          <ul class="buttons-list list">
+            <li class="item"><button class="btn secondary" type="button">Усі</button></li>
+            <li class="item"><button class="btn secondary" type="button">Веб-сайти</button></li>
+            <li class="item"><button class="btn secondary" type="button">Додатки</button></li>
+            <li class="item"><button class="btn secondary" type="button">Дизайн</button></li>
+            <li class="item"><button class="btn secondary" type="button">Маркетинг</button></li>
+          </ul>
+        </div>
       </section>
-      <section class="section">
-        <ul class="content-list">
-          <li>
-            <a
-              ><img src="./images/technocrack.jpg" alt="ноутбук" width="370" height="294" />
-              <h2 class="title">Технокряк</h2>
-              <p>Веб-сайт</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/poster.jpg" alt="баскетболісти" width="370" height="294" />
-              <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-              <p>Дизайн</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/restaurant.jpg" alt="риба" width="370" height="294" />
-              <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
-              <p>Додаток</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/prime.jpg" alt="навушники" width="370" height="294" />
-              <h2 class="title">Проєкт <span lang="en">Prime</span></h2>
-              <p>Маркетинг</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/boxes.jpg" alt="дві коробки" width="370" height="294" />
-              <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
-              <p>Додаток</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/inspiration.jpg" alt="монітор" width="370" height="294" />
-              <h2 class="title" lang="en">Inspiration has no Borders</h2>
-              <p>Веб-сайт</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/edition.jpg" alt="книга" width="370" height="294" />
-              <h2 class="title">Видання <span lang="en">Limited Edition</span></h2>
-              <p>Дизайн</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/project_lab.jpg" alt="бірка" width="370" height="294" />
-              <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
-              <p>Маркетинг</p></a
-            >
-          </li>
-          <li>
-            <a
-              ><img src="./images/growing_business.jpg" alt="ноутбук" width="370" height="294" />
-              <h2 class="title" lang="en">Growing Business</h2>
-              <p>Додаток</p>
-            </a>
-          </li>
-        </ul>
+      <section class="section card">
+        <div class="container">
+          <ul class="card-set list">
+            <li class="item">
+              <a class="link"
+                ><img src="./images/technocrack.jpg" alt="ноутбук" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Технокряк</h2>
+                  <p>Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/poster.jpg" alt="баскетболісти" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                  <p>Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/restaurant.jpg" alt="риба" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p>Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a class="link"
+                ><img src="./images/prime.jpg" alt="навушники" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Проєкт <span lang="en">Prime</span></h2>
+                  <p>Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/boxes.jpg" alt="дві коробки" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
+                  <p>Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/inspiration.jpg" alt="монітор" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title" lang="en">Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/edition.jpg" alt="книга" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Видання <span lang="en">Limited Edition</span></h2>
+                  <p>Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/project_lab.jpg" alt="бірка" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
+                  <p>Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="item">
+              <a
+                ><img src="./images/growing_business.jpg" alt="ноутбук" width="370" height="294" />
+                <div class="card-info">
+                  <h2 class="title" lang="en">Growing Business</h2>
+                  <p>Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-<!--Footer-->
+    <!--Footer-->
     <footer class="footer">
       <div class="container footer-nav">
         <a href="/" class="footer-logo"><span>Web</span>Studio</a>
