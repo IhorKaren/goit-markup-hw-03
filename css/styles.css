@@ -9,7 +9,7 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
+  background-color: #fff;
 
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -35,7 +35,19 @@ img {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 /* Container */
+}
 
 .container {
   width: 1200px;
@@ -159,6 +171,10 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: #2F303A;
 }
 
 .hero-title {
@@ -172,8 +188,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  background-color: skyblue;
 }
 
 /* main button */
@@ -199,8 +213,8 @@ img {
 
 .btn.primary:hover,
 .btn.primary:focus {
-  color: var(--title-text-color);
-  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+  background-color: #188CE8;
 
   cursor: pointer;
 }
@@ -210,7 +224,6 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 
-  background-color: pink;
 }
 
 /* Sections*/
@@ -258,6 +271,10 @@ img {
 
 /* Gallery */
 
+.section.about {
+  padding-top: 0;
+}
+
 .gallery-list {
   display: flex;
 }
@@ -273,6 +290,7 @@ img {
 /* Team */
 
 .team {
+  background-color: #F5F4FA;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -292,15 +310,34 @@ img {
 
 .team-list .item {
   width: 270px;
+
+  background-color: #ffffff;
 }
 
 .team-list .item + .item {
   margin-left: 30px;
 }
 
+.team-card h3 {
+  margin-top: 0;
+}
+
+.team-card p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 
   font-weight: 400;
@@ -310,8 +347,6 @@ img {
 
 .footer-nav {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -354,24 +389,23 @@ img {
 
 /* Buttons */
 
-.button-nav {
+.filter {
   text-align: center;
-  margin-top: 94px;
 }
 
-.button-nav .item {
+.filter .filter-item {
   display: inline-block;
   min-width: 73px;
 }
 
-.button-nav .item+.item {
+.filter .filter-item + .filter-item {
   margin-left: 8px;
 }
 
-.buttons-list {
+.filter {
   list-style: none;
 
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -407,8 +441,9 @@ img {
 
 /* Cards set */
 
-.card h2, p {
+.card p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card {
@@ -419,6 +454,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 50px;
 
   font-weight: 400;
   font-size: 16px;
@@ -426,10 +462,13 @@ img {
 }
 
 .card-set .item {
-  width: calc((100% - 2 * 30px) / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .card-set .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
