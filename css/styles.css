@@ -446,10 +446,6 @@ img {
   margin-bottom: 0;
 }
 
-.card {
-  padding-top: 50px;
-}
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
